@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head><title>HOME | AURORA</title></head>
+<style>
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  margin: -76px 0 0 -76px;
+  border: 5px solid #3d3d38;
+  border-radius: 50%;
+  border-top: 5px solid yellow;
+  -webkit-animation: spin 0.7s ease-in-out infinite;
+  animation: spin 0.7s ease-in-out infinite;
+}
+
+body{
+	background-image: url('https://media.istockphoto.com/photos/defocused-lights-background-picture-id1091553934?b=1&k=20&m=1091553934&s=170667a&w=0&h=sTodo8ws91vRFTzQ188ARlKZpDk2WCWqRzPBbIPHMuY=');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+/*Home page*/
+
+h1{
+	font-family:Monotype Corsiva;
+	font-size: 100px;
+	text-shadow: 1px 1px 0 yellow;
+	margin: 0px;
+	color: black;
+}
+#lis{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #3d3d38;
+}
+nav{
+	position: sticky;
+	top: 0;
+}
+li a{
+	float: left;
+	padding-left:30px;
+	padding-right: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 30px;
+	color: white;
+	}
+a{
+	text-decoration:none;
+}
+li a:hover{
+	background-color: #fff173;
+	color: black;
+}
+
+.first{
+	background-color: #fff173;
+	padding: 20px;
+	width: 300px;
+	height: 325px;
+}
+.first-div{
+	display: flex;
+}
+.d{
+	float: left;
+	flex: 33.33%;
+	padding:30px 20px 0px 100px;
+}
+.first:hover{
+	background-color: #3d3d38;
+}
+.under:hover{
+	background-color: #3d3d38;
+	color: white;
+}
+.under{
+	z-index: 1;
+	background-color: #fff173;
+	font-family: Georgia;
+	margin: 0px 0px 10px 0px;
+	padding: 10px 0px;
+}
+
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h1><i>AURORA</i></h1>
+		<nav>
+			<ul id="lis">
+				<li><a href="C:\Users\HARSHITHA\Downloads\loading.html">Home</a></li>
+				<li><a href="C:\Users\HARSHITHA\Downloads\about.html">About</a></li>
+				<li><a href="C:\Users\HARSHITHA\Downloads\contact.html">Contact Us</a></li>
+				<li><a href="C:\Users\HARSHITHA\Downloads\Login.html">Login/Sign Up</a><li>
+			</ul>
+		</nav>
+		<div class="fisrt-div">
+			<div class="d">
+			<img class="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROTmFElrpblM6IvLMeHDYvxxSi1bWt37z78g&usqp=CAU">
+			<b><p class="under">Table lamp<br>Rs.1999</p></b>
+			</div>
+			<div class="d">
+			<img class="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKUm0xk8Qqos3nqimhdUbSfN98q8Y2zvEKfw&usqp=CAU">
+			<b><p class="under">White Table lamp<br>Rs.1599</p></b>
+			</div>
+			<div class="d">
+			<img class="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8zj6FWyBWTtZCZ7qKrbpLgLMO0E04cO9AVw&usqp=CAU">
+			<b><p class="under">Modest Table lamp<br>Rs.1199</p></b>
+			</div>
+			<div class="d">
+			<img class="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh8-l3CxPm3fNnDko1y4scvSE4QXxvjJ8e1w&usqp=CAU">
+			<b><p class="under">Crimson Lamp<br>Rs.1290</p></b>
+			</div>
+			<div class="d">
+			<img class="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVVUxxhqZVLDOeosZp6EzRAubk-l0cSgwDgg&usqp=CAU">
+			<b><p class="under">Study lamp<br>Rs.998</p></b>
+			</div>
+			<div class="d">
+			<img class="first" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfnEwjc9hXIIGTcj_06JGQf-J6WeGLLim5WA&usqp=CAU">
+			<b><p class="under">Decor Golden lamp<br>Rs.2990</p></b>
+			</div>
+		</div>
+</div>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>
